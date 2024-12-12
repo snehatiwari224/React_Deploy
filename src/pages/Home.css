@@ -1,0 +1,109 @@
+/* Home.css */
+
+/* General container styling */
+.tv-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+.tv-container h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* TV items grid layout */
+.tv-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 0 auto;
+    padding: 10px;
+    max-width: 1200px;
+}
+
+/* Individual TV item styling */
+.tv-item {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: left;
+}
+
+.tv-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.tv-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Content within the TV item */
+.tv-item h3 {
+    font-size: 1.2rem;
+    margin: 15px;
+    color: #444;
+}
+
+.tv-item p {
+    margin: 0 15px 10px;
+    color: #666;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+/* Price styling */
+.price {
+    font-weight: bold;
+    margin: 0 15px 10px;
+    color: #2a9d8f;
+    font-size: 1rem;
+}
+
+/* Buy Now button styling */
+.buy-button {
+    display: inline-block;
+    background-color: #264653;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    margin: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #2a9d8f;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 600px) {
+    .tv-container h2 {
+        font-size: 1.5rem;
+    }
+
+    .tv-item h3 {
+        font-size: 1rem;
+    }
+
+    .price {
+        font-size: 0.9rem;
+    }
+
+    .buy-button {
+        padding: 8px 12px;
+        font-size: 0.8rem;
+    }
+}
